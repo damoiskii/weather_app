@@ -1,0 +1,15 @@
+1. Add 'peanut' to dev dependencies (Can be added globally as well).
+
+dev_dependencies:
+  peanut: ^latest_version
+
+
+2. Then run the command:
+
+dart run peanut
+
+
+
+3. Then:
+
+git push origin --set-upstream gh-pages
