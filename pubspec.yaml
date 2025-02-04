@@ -43,6 +43,7 @@ dependencies:
 
   animated_gradient_background: ^0.0.1
   date_time_format: ^2.0.1
+  another_flutter_splash_screen: ^1.2.1
 
 dev_dependencies:
   flutter_test:
