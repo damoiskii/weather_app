@@ -11,7 +11,7 @@ class SplashPage extends StatelessWidget {
     return Scaffold(
       body: FlutterSplashScreen(
         useImmersiveMode: true,
-        duration: const Duration(milliseconds: 5000),
+        duration: const Duration(milliseconds: 10000),
         nextScreen: const HomePage(),
         backgroundColor: Colors.black,
         // splashScreenBody: Center(
@@ -25,18 +25,30 @@ class SplashPage extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           child: Center(
-            child: SizedBox(
-              // width: 269,
-              // height: 474,
-              // child: Lottie.asset(
-              //   "assets/images/loading.json",
-              //   repeat: true,
-              // ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  // width: 269,
+                  // height: 474,
+                  // child: Lottie.asset(
+                  //   "assets/images/loading.json",
+                  //   repeat: true,
+                  // ),
 
-              child: Lottie.asset(
-                "assets/images/loading-2.json",
-                repeat: true,
-              ),
+                  child: Lottie.asset(
+                    "assets/images/loading-2.json",
+                    repeat: true,
+                  ),
+                ),
+                Text(
+                  'Weather Forecast',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ),
         ),
